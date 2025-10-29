@@ -1,42 +1,187 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Variables de color */
+:root {
+  --gold-color: #E0C28C;
+  --black-bg: #000000;
+  --white-text: #FFFFFF;
+  --blur-bg: rgba(128, 128, 128, 0.3);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Contenedor principal */
+.portfolio-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--black-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Georgia', 'Times New Roman', serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Sección del header */
+.header-section {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 10;
+}
+
+/* Círculo decorativo del header */
+.decorative-circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--gold-color);
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* Caja de metadata */
+.metadata-box {
+  padding: 8px 16px;
+  border: 2px solid var(--gold-color);
+  border-radius: 20px;
+  background: transparent;
+}
+
+.metadata-box span {
+  color: var(--white-text);
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Sección del título */
+.title-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+/* Título principal */
+.main-title {
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 700;
+  color: var(--white-text);
+  margin: 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  position: relative;
+  z-index: 2;
+}
+
+/* Efectos de desenfoque con glass effect */
+.blur-overlay {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.blur-1 {
+  width: 100px;
+  height: 80px;
+  top: 15%;
+  left: 15%;
+  animation: float 3s ease-in-out infinite;
+}
+
+.blur-2 {
+  width: 140px;
+  height: 60px;
+  top: 60%;
+  right: 15%;
+  animation: float 4s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-10px) rotate(2deg);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/* Sección del footer */
+.footer-section {
+  position: absolute;
+  bottom: 25%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 10;
+}
+
+/* Punto decorativo del footer */
+.decorative-dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--gold-color);
+  border-radius: 50%;
+}
+
+/* Caja del nombre */
+.name-box {
+  padding: 8px 16px;
+  border: 2px solid var(--gold-color);
+  border-radius: 20px;
+  background-color: var(--gold-color);
+}
+
+.name-box span {
+  color: var(--black-bg);
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header-section {
+    top: 15%;
+    left: 5%;
+  }
+  
+  .footer-section {
+    bottom: 20%;
+    right: 5%;
+  }
+  
+  .main-title {
+    font-size: clamp(3rem, 8vw, 5rem);
+  }
+  
+  .blur-overlay {
+    display: none; /* Ocultar efectos de desenfoque en móviles para mejor rendimiento */
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+@media (max-width: 480px) {
+  .header-section,
+  .footer-section {
+    gap: 10px;
+  }
+  
+  .metadata-box,
+  .name-box {
+    padding: 6px 12px;
+  }
+  
+  .metadata-box span,
+  .name-box span {
+    font-size: 12px;
+  }
 }

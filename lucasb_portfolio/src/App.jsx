@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import './App.css'
 import profileImage from './img/lucas-profile.png'
+import SIMA_img from './img/SIMA_img.png'
+import SALUD_DIGITAL_img from './img/SALUD_DIGITAL.jpg'
+import TREVIAN_img from './img/TREVIAN.png'
 
 function App() {
   const [expandedProject, setExpandedProject] = useState(0)
@@ -106,19 +109,19 @@ function App() {
       title: 'SALUD DIGITAL',
       year: '2023',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-      image: 'https://picsum.photos/800/500?random=1',
+      image: SALUD_DIGITAL_img,
     },
     {
       title: 'SIMA (Sclerosis Intelligent Medical Assistant)',
       year: '2024',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-      image: 'https://picsum.photos/800/500?random=2',
+      image: SIMA_img,
     },
     {
       title: 'Trevian',
       year: '2025',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-      image: 'https://picsum.photos/800/500?random=3',
+      image: TREVIAN_img,
     },
   ]
 
@@ -164,14 +167,21 @@ function App() {
       <section id="acerca-de-mi" className="about-section">
         <div className="about-container">
           <h2 className="section-title">ACERCA DE MÍ</h2>
-          <p className="about-text">No tengo ningún tipo de experiencia pero tengo amigos que me quieren mucho.</p>
-          <p className="about-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p className="about-text">Soy desarrollador de software orientado al backend, apasionado por crear sistemas robustos y bien estructurados. Trabajo con Node.js, Express, Prisma, JWT, y despliegues serverless. Disfruto resolver problemas, optimizar lógica de negocio y aprender nuevas tecnologías constantemente. Soy apasionado por el deporte y disfruto de las salidas con amigos y familia.</p>
 
           <h3 className="subsection-title">IDIOMAS</h3>
-          <p className="subsection-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <ul className="languages-list">
+            <li>Español: Nativo</li>
+            <li>Inglés: Avanzado (C1) - Cambridge Assessment English</li>
+            <li>Hebreo: Básico</li>
+          </ul>
 
-          <h3 className="subsection-title">EDUCACIÓN</h3>
-          <p className="subsection-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+          <h3 className="subsection-title">FORMACIÓN ACADÉMICA</h3>
+          <div className="education-item">
+            <h4 className="education-title">Bachiller en Informática</h4>
+            <p className="education-years">2020 • 2025</p>
+            <p className="education-institution">Escuela Técnica ORT Belgrano</p>
+          </div>
         </div>
       </section>
 

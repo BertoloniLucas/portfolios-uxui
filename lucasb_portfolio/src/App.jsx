@@ -1,9 +1,12 @@
 import { useState, useEffect, useRef } from 'react'
 import './App.css'
 import profileImage from './img/lucas-profile.png'
+import escoltaImage from './img/escolta_image.jpeg'
 import SIMA_img from './img/SIMA_img.png'
 import SALUD_DIGITAL_img from './img/SALUD_DIGITAL.jpg'
 import TREVIAN_img from './img/TREVIAN.png'
+import uca_image from './img/uca_image.JPG'
+import london_image from './img/london_image.jpg'
 
 function App() {
   const [expandedProject, setExpandedProject] = useState(0)
@@ -108,19 +111,19 @@ function App() {
     {
       title: 'SALUD DIGITAL',
       year: '2023',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+      description: 'Explorador de archivos médicos con base de datos, la cual contiene los pacientes de los médicos y asociados a ellos, se encuntran los archivos PDF de sus los pacientes con todas las visitas que han tenido. Por otra parte, se pueden modificar estos archivos PDF y actualizar la base de datos con los cambios realizados.',
       image: SALUD_DIGITAL_img,
     },
     {
       title: 'SIMA (Sclerosis Intelligent Medical Assistant)',
       year: '2024',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+      description: 'Plataforma de asistencia médica para el diagnóstico de esclerósis múltiple, utilizando técnicas de Machine Learning, en el marco de Inteligencia Artificial.',
       image: SIMA_img,
     },
     {
       title: 'Trevian',
       year: '2025',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+      description: 'El proyecto consiste en una aplicación mobile que permita analizar la pisada del usuario a partir de imágenes y videos de sus pies. Utilizando algoritmos de Machine Learning, la app generará automáticamente una plantilla ortopédica personalizada en 3D, diseñada para corregir y optimizar la pisada según las necesidades del usuario.',
       image: TREVIAN_img,
     },
   ]
@@ -235,19 +238,25 @@ function App() {
           <h2 className="section-title">LOGROS</h2>
           <div className="achievements-grid">
             <div className="achievement-card">
-              <div className="achievement-image-placeholder"></div>
+              <div className="achievement-image">
+                <img src={escoltaImage} alt="Escolta" />
+              </div>
               <h3 className="achievement-title">Escolta</h3>
-              <p className="achievement-description">Fui seleccionado como escolta a la bandera nacional en mi escuela por tener uno de los mejores promedios de mi camada (9,8)</p>
+              <p className="achievement-description">Fui seleccionado como escolta a la bandera nacional en mi escuela por tener uno de los mejores promedios generales de mi camada (9,8). Me posicioné en el lugar 7 de mi camada, entre 514 alumnos.</p>
             </div>
             <div className="achievement-card">
-              <div className="achievement-image-placeholder"></div>
+              <div className="achievement-image">
+                <img src={london_image} alt="CLAYSS at UCA" />
+              </div>
               <h3 className="achievement-title">Viaje de estudios a Londres</h3>
-              <p className="achievement-description">Fui seleccionado como escolta a la bandera nacional en mi escuela por tener uno de los mejores promedios de mi camada (9,8)</p>
+              <p className="achievement-description">Fui seleccionado a un viaje de estudios a Londres, en el cual tuve la oportunidad de conocer la cultura y la vida de la ciudad europea. Este logro también se vio posibilitado gracias a mi desempeño escolar.</p>
             </div>
             <div className="achievement-card achievement-card-centered">
-              <div className="achievement-image-placeholder"></div>
+            <div className="achievement-image">
+                <img src={uca_image} alt="CLAYSS at UCA" />
+              </div>
               <h3 className="achievement-title">Orador</h3>
-              <p className="achievement-description">Fui seleccionado como escolta a la bandera nacional en mi escuela por tener uno de los mejores promedios de mi camada (9,8)</p>
+              <p className="achievement-description">Gracias al gran desarrollo del proyecto SIMA en el año 2024 y durante la cursada de 4to año en la escuela secundaria, fuimos seleccionados para tener la oportunidad de participar del panel llamado "Los proyectos de aprendizaje-servicio solidario en tiempos de IA" en el congreso de CLAYSS en 2025, realizado en el auditorio principal de la UCA (Universidad Católica Argentina)</p>
             </div>
           </div>
         </div>
@@ -256,7 +265,10 @@ function App() {
       <section id="contacto" className="contact-section">
         <div className="contact-container">
           <h2 className="section-title">CONTACTO</h2>
-          <p className="contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <ul className="languages-list">
+            <li>✉️ Email: lucasbertoloni5@gmail.com</li>
+            <li>📞 Phone Number (AR Code): +54 911 7008 8958</li>
+          </ul>
         </div>
       </section>
       </div>

@@ -179,6 +179,13 @@ function App() {
             <li>Hebreo: Básico</li>
           </ul>
 
+          <h3 className="subsection-title">CURSOS Y CERTIFICACIONES</h3>
+          <ul className="languages-list">
+            <li>Desarrollo Web I • UTN Buenos Aires</li>
+            <li>Desarrollo Web II • UTN Buenos Aires</li>
+            <li>Introducción a Python • UTN Buenos Aires</li>
+          </ul>
+
           <h3 className="subsection-title">FORMACIÓN ACADÉMICA</h3>
           <div className="education-item">
             <h4 className="education-title">Bachiller en Informática</h4>
@@ -266,8 +273,8 @@ function App() {
         <div className="contact-container">
           <h2 className="section-title">CONTACTO</h2>
           <ul className="languages-list">
-            <li>✉️ Email: lucasbertoloni5@gmail.com</li>
-            <li>📞 Phone Number (AR Code): +54 911 7008 8958</li>
+            <li>Email: lucasbertoloni5@gmail.com</li>
+            <li>Phone Number (AR Code): +54 911 7008 8958</li>
           </ul>
         </div>
       </section>

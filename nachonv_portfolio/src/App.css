@@ -25,6 +25,16 @@
 
 html {
   scroll-behavior: smooth;
+  /* Hide scrollbar for all browsers */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
 }
 
 * {
@@ -38,7 +48,7 @@ body {
   padding: 0;
   background-color: var(--black-bg);
   color: var(--white-text);
-  font-family: 'Recoleta Alt', serif;
+  font-family: 'Georgia', 'Times New Roman', serif;
   overflow-x: hidden;
 }
 
@@ -680,12 +690,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  /* Add padding for zoom-out effect */
 }
 
 .project-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  /* Changed from cover to contain */
+  image-rendering: crisp-edges;
+  /* Prevent pixelation */
+  image-rendering: -webkit-optimize-contrast;
+  /* For Safari */
 }
 
 .project-details {
@@ -718,13 +735,18 @@ body {
 
 .project-year {
   position: absolute;
-  bottom: -40px;
+  bottom: 20px;
+  /* Moved up from -40px */
   left: 20px;
   font-family: 'Georgia', serif;
-  font-size: 12rem;
+  font-size: 8rem;
+  /* Reduced from 12rem */
+  font-weight: 300;
+  /* Lighter weight */
   color: var(--card-bg);
   /* Beige color */
-  opacity: 1;
+  opacity: 0.8;
+  /* Slightly more transparent */
   z-index: 0;
   line-height: 1;
 }

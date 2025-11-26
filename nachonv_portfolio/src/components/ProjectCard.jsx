@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
             </div>
 
             <div className="card-content">
-                <div className="project-image-container" style={{ backgroundColor: project.color }}>
+                <div className="project-image-container">
                     {/* Placeholder for actual project images/logos */}
                     {project.image ? (
                         <img src={project.image} alt={project.title} className="project-image" />

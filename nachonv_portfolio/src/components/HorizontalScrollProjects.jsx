@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
 import { motion, useTransform, useScroll } from 'framer-motion';
 import ProjectCard from './ProjectCard';
+import StuddyBuddyImg from '../img/studdybuddy.png';
+import SimaImg from '../img/sima.png';
+import TrevianImg from '../img/trevian.png';
 
 const projects = [
     {
@@ -10,7 +13,7 @@ const projects = [
         description: "El proyecto consiste en una aplicación mobile que permita analizar la pisada del usuario a partir de imágenes y videos de sus pies. Utilizando algoritmos de Machine Learning, la app generará automáticamente una plantilla ortopédica personalizada en 3D, diseñada para corregir y optimizar la pisada según las necesidades del usuario.",
         learning: "Con este proyecto mejoré ampliamente mis habilidades en diseño UX/UI",
         color: "#0a192f", // Dark blue from image
-        image: null // Placeholder
+        image: StuddyBuddyImg // Placeholder
     },
     {
         id: 2,
@@ -20,17 +23,16 @@ const projects = [
         description: "SIMA es un detector de esclerosis múltiple con algoritmos de Machine Learning. SIMA es un detector de esclerosis múltiple con algoritmos de Machine Learning. SIMA es un detector de esclerosis múltiple con algoritmos de Machine Learning.",
         learning: "Con este proyecto mejoré ampliamente mis habilidades en diseño UX/UI",
         color: "#ffffff", // White bg from image
-        image: null // Placeholder
+        image: SimaImg // Placeholder
     },
     {
         id: 3,
-        title: "Trevian",
-        subtitle: "SCLEROSIS INTELLIGENT MEDICAL ASSISTANT", // Copying subtitle structure, adjust if needed
+        title: "Trevian", // Copying subtitle structure, adjust if needed
         year: "2025",
         description: "El proyecto consiste en una aplicación mobile que permita analizar la pisada del usuario a partir de imágenes y videos de sus pies. Utilizando algoritmos de Machine Learning, la app generará automáticamente una plantilla ortopédica personalizada en 3D.",
         learning: "Con este proyecto mejoré ampliamente mis habilidades en diseño UX/UI",
         color: "#050511", // Very dark blue/black
-        image: null // Placeholder
+        image: TrevianImg // Placeholder
     }
 ];
 

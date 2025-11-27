@@ -5,6 +5,9 @@ import Portfolio from './components/Portfolio';
 
 import ProjectsSeparator from './components/ProjectsSeparator';
 import HorizontalScrollProjects from './components/HorizontalScrollProjects';
+import NiholProject from './components/NiholProject';
+import AboutMeSection from './components/AboutMeSection';
+import AchievementsSection from './components/AchievementsSection';
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       <Portfolio />
       <ProjectsSeparator />
       <HorizontalScrollProjects />
+      <NiholProject />
+      <AboutMeSection />
+      <AchievementsSection />
     </div>
   );
 }

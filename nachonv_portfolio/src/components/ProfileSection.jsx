@@ -4,9 +4,7 @@ const ProfileSection = () => {
     return (
         <div className="profile-section card">
             <div className="profile-image-container">
-                {/* Placeholder for image - user said they will add it later */}
                 <div className="profile-image-placeholder">
-                    {/* We can put a temporary image or icon here if needed */}
                 </div>
             </div>
             <div className="profile-info">

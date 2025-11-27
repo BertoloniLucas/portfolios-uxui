@@ -12,8 +12,8 @@ const projects = [
         year: "2023",
         description: "El proyecto consiste en una aplicación mobile que permita analizar la pisada del usuario a partir de imágenes y videos de sus pies. Utilizando algoritmos de Machine Learning, la app generará automáticamente una plantilla ortopédica personalizada en 3D, diseñada para corregir y optimizar la pisada según las necesidades del usuario.",
         learning: "Con este proyecto mejoré ampliamente mis habilidades en diseño UX/UI",
-        color: "#0a192f", // Dark blue from image
-        image: StuddyBuddyImg // Placeholder
+        color: "#0a192f",
+        image: StuddyBuddyImg
     },
     {
         id: 2,
@@ -22,17 +22,17 @@ const projects = [
         year: "2024",
         description: "SIMA es un detector de esclerosis múltiple con algoritmos de Machine Learning. SIMA es un detector de esclerosis múltiple con algoritmos de Machine Learning. SIMA es un detector de esclerosis múltiple con algoritmos de Machine Learning.",
         learning: "Con este proyecto mejoré ampliamente mis habilidades en diseño UX/UI",
-        color: "#ffffff", // White bg from image
-        image: SimaImg // Placeholder
+        color: "#ffffff",
+        image: SimaImg
     },
     {
         id: 3,
-        title: "Trevian", // Copying subtitle structure, adjust if needed
+        title: "Trevian",
         year: "2025",
         description: "El proyecto consiste en una aplicación mobile que permita analizar la pisada del usuario a partir de imágenes y videos de sus pies. Utilizando algoritmos de Machine Learning, la app generará automáticamente una plantilla ortopédica personalizada en 3D.",
         learning: "Con este proyecto mejoré ampliamente mis habilidades en diseño UX/UI",
-        color: "#050511", // Very dark blue/black
-        image: TrevianImg // Placeholder
+        color: "#050511",
+        image: TrevianImg
     }
 ];
 

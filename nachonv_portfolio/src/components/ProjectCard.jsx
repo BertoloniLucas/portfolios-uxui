@@ -14,12 +14,10 @@ const ProjectCard = ({ project }) => {
 
             <div className="card-content">
                 <div className="project-image-container">
-                    {/* Placeholder for actual project images/logos */}
                     {project.image ? (
                         <img src={project.image} alt={project.title} className="project-image" />
                     ) : (
                         <div className="project-logo-placeholder">
-                            {/* Simple text placeholder if no image */}
                             <span style={{ fontSize: '2rem', fontWeight: 'bold', color: 'white' }}>{project.title}</span>
                         </div>
                     )}

@@ -45,13 +45,13 @@ const NiholProject = () => {
 
                 <div className="nihol-logos">
                     <div className="logo-item">
-                        <p className="logo-label">Logo anterior</p>
+                        <p className="logo-label">Nuevo logo</p>
                         <div className="logo-display old-logo">
                             <img src={NiholLogo1} alt="Logo anterior de NIHOL" className="nihol-logo-image" />
                         </div>
                     </div>
                     <div className="logo-item">
-                        <p className="logo-label">Nuevo logo</p>
+                        <p className="logo-label">Logo anterior</p>
                         <div className="logo-display new-logo">
                             <img src={NiholLogo2} alt="Nuevo logo de NIHOL" className="nihol-logo-image" />
                         </div>

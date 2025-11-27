@@ -1,22 +1,25 @@
 import React, { useState } from 'react';
+import StemImg from '../img/stem.png';
+import PanamaImg from '../img/panama.png';
+import LondresImg from '../img/londres.jpeg';
 
 const achievementsData = [
     {
         id: 1,
         title: "CONCURSO DE COMUNICACIÓN STEM WORLD ORT",
-        image: null,
+        image: StemImg,
         description: "En 2024 fui seleccionado por mi escuela para viajar a Panamá a una escuela de verano sobre ecología."
     },
     {
         id: 2,
         title: "VIAJE A PANAMÁ",
-        image: null,
+        image: PanamaImg,
         description: "En 2024 fui seleccionado por mi escuela para viajar a Panamá a una escuela de verano sobre ecología."
     },
     {
         id: 3,
         title: "VIAJE A LONDRES",
-        image: null,
+        image: LondresImg,
         description: "En 2024 fui seleccionado por mi escuela para viajar a Panamá a una escuela de verano sobre ecología."
     }
 ];

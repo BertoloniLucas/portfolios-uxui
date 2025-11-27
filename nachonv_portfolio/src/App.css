@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Recoleta Alt';
-  src: url('./assets/fonts/recoleta-alt.otf');
+  font-family: 'Recoleta Alt Medium';
+  src: url('./assets/fonts/Recoleta Alt Medium.otf');
 }
 
 :root {
@@ -16,7 +16,7 @@
   --text-color: #1a1a1a;
   --accent-color: #ff9900;
   --pill-bg: #eebf4d;
-  --font-family: 'Recoleta Alt', serif;
+  --font-family: 'Recoleta Alt Medium', serif;
 }
 
 html {
@@ -44,7 +44,7 @@ body {
   padding: 0;
   background-color: var(--black-bg);
   color: var(--white-text);
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Recoleta Alt Medium', serif;
   overflow-x: hidden;
 }
 
@@ -59,7 +59,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  font-family: 'Recoleta Alt', serif;
+  font-family: 'Recoleta Alt Medium', serif;
 }
 
 
@@ -92,7 +92,7 @@ body {
 
 .metadata-box span {
   color: var(--white-text);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -114,7 +114,7 @@ body {
   margin: 0;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Recoleta Alt Medium', serif;
   position: relative;
   z-index: 2;
 }
@@ -188,7 +188,7 @@ body {
 
 .name-box span {
   color: var(--black-bg);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
@@ -321,6 +321,14 @@ body {
   border-bottom-left-radius: 80px;
 }
 
+.about-text p {
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-color);
+  margin: 0;
+}
+
 .contact-section {
   grid-area: contact;
   border-bottom-left-radius: 80px;
@@ -397,6 +405,7 @@ body {
   padding: 5px 12px;
   border-radius: 50px;
   font-size: 0.75rem;
+  font-family: 'Figtree', sans-serif;
   color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
 }
@@ -415,6 +424,7 @@ body {
   border-radius: 50px;
   padding: 3px 15px;
   font-size: 0.8rem;
+  font-family: 'Figtree', sans-serif;
   display: inline-block;
   margin-bottom: 8px;
   font-style: italic;
@@ -428,6 +438,7 @@ body {
 
 .degree {
   font-size: 0.9rem;
+  font-family: 'Figtree', sans-serif;
   color: #444;
 }
 
@@ -443,6 +454,7 @@ body {
   padding: 5px 15px;
   border-radius: 50px;
   font-size: 0.85rem;
+  font-family: 'Recoleta Alt Medium', sans-serif;
   font-weight: 600;
   border: 1px solid #333;
   font-style: italic;
@@ -478,6 +490,7 @@ body {
 
 .language-level {
   font-size: 0.75rem;
+  font-family: 'Figtree', sans-serif;
   font-style: italic;
   color: #444;
 }
@@ -486,14 +499,15 @@ body {
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 35px;
 }
 
 .contact-item {
   align-items: center;
-  gap: 12px;
+  gap: 18px;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-family: 'Figtree', sans-serif;
+  font-size: 1.05rem;
 }
 
 
@@ -519,7 +533,7 @@ body {
 }
 
 .separator-title {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Recoleta Alt Medium', serif;
   font-size: clamp(3rem, 10vw, 8rem);
   font-weight: 700;
   color: var(--card-bg);
@@ -539,7 +553,7 @@ body {
 
 .separator-subtitle span {
   color: var(--white-text);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -652,7 +666,7 @@ body {
 }
 
 .project-title {
-  font-family: 'Georgia', serif;
+  font-family: 'Recoleta Alt Medium', serif;
   font-size: 2rem;
   font-weight: 700;
   color: var(--gold-color);
@@ -660,7 +674,7 @@ body {
 }
 
 .project-subtitle {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 1rem;
   color: #888;
   text-transform: uppercase;
@@ -710,7 +724,7 @@ body {
 }
 
 .project-description {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: #ddd;
@@ -718,13 +732,13 @@ body {
 
 .project-learning h4 {
   color: var(--gold-color);
-  font-family: 'Georgia', serif;
+  font-family: 'Recoleta Alt Medium', serif;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .project-learning p {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 0.9rem;
   color: #bbb;
 }
@@ -734,7 +748,7 @@ body {
   bottom: 20px;
 
   left: 20px;
-  font-family: 'Georgia', serif;
+  font-family: 'Recoleta Alt Medium', serif;
   font-size: 8rem;
 
   font-weight: 300;
@@ -817,7 +831,7 @@ body {
 }
 
 .nihol-title {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Recoleta Alt Medium', serif;
   font-size: 2rem;
   font-weight: 700;
   color: var(--white-text);
@@ -831,7 +845,7 @@ body {
 }
 
 .rebranding-label {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--gold-color);
@@ -847,7 +861,7 @@ body {
 }
 
 .content-column p {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 0.95rem;
   line-height: 1.7;
   color: var(--white-text);
@@ -869,7 +883,7 @@ body {
 }
 
 .logo-label {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 0.85rem;
   color: var(--white-text);
   margin: 0;
@@ -991,7 +1005,7 @@ body {
 }
 
 .about-me-title {
-  font-family: 'Recoleta Alt', 'Georgia', serif;
+  font-family: 'Recoleta Alt Medium', serif;
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 700;
   color: var(--card-bg);
@@ -1010,7 +1024,7 @@ body {
 
 .about-me-subtitle span {
   color: var(--white-text);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -1108,7 +1122,7 @@ body {
 }
 
 .card-title {
-  font-family: 'Recoleta Alt', 'Georgia', serif;
+  font-family: 'Recoleta Alt Medium', serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--card-bg);
@@ -1136,6 +1150,12 @@ body {
   object-fit: cover;
 }
 
+.card-image-contain {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
 .card-image-placeholder {
   width: 100%;
   height: 100%;
@@ -1147,7 +1167,7 @@ body {
 
 
 .card-description {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--white-text);
@@ -1168,7 +1188,7 @@ body {
   color: var(--black-bg);
   padding: 6px 16px;
   border-radius: 50px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
   font-style: italic;
@@ -1388,7 +1408,7 @@ body {
 }
 
 .achievements-title {
-  font-family: 'Recoleta Alt', 'Georgia', serif;
+  font-family: 'Recoleta Alt Medium', serif;
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 700;
   color: var(--card-bg);
@@ -1407,7 +1427,7 @@ body {
 
 .achievements-subtitle span {
   color: var(--white-text);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -1486,7 +1506,7 @@ body {
 }
 
 .achievement-title {
-  font-family: 'Recoleta Alt', 'Georgia', serif;
+  font-family: 'Recoleta Alt Medium', serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--white-text);
@@ -1496,7 +1516,7 @@ body {
 }
 
 .achievement-description {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Figtree', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: var(--white-text);

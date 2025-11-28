@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import VoleyImg from '../img/voley.png';
 import FotografiaImg from '../img/fotografia.png';
-import GuitarraImg from '../img/guitarra.jpeg';
 
 const cardsData = [
     {
@@ -19,14 +18,6 @@ const cardsData = [
         description: "Juego al voley hace ya 10 años. Me federé en 2018 y empecé a jugar en el club GEBA (Gimnasia y Esgrima de Buenos Aires). Al año siguiente me cambié al Club Ciudad de Buenos Aires donde poco a poco comencé una carrera profesional. Logré 3 campeonatos nacionales con mi club y me convocaron muchas veces a la Selección Argentina y Selección Metropolitana donde me destaqué como capitán.",
         tags: ["Liderazgo", "Trabajo en equipo", "Disciplina", "Constancia"],
         rotation: 2
-    },
-    {
-        id: 3,
-        title: "MÚSICA",
-        image: GuitarraImg,
-        description: "La música ha sido parte fundamental de mi vida. Toco la guitarra desde los 12 años y me encanta explorar diferentes géneros musicales. Creo que la música y el diseño comparten muchos principios creativos.",
-        tags: ["Creatividad", "Disciplina", "Pasión", "Expresión"],
-        rotation: -1.5
     }
 ];
 
